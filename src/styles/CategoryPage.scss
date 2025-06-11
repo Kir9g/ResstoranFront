@@ -1,0 +1,184 @@
+.scroller-container {
+    position: relative;
+    padding: 2rem 0;
+    border-radius: 16px;
+    background-color: #1e1e1e;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .scroller {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .card {
+    min-width: 220px;
+    max-width: 240px;
+    background: #111;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid white;
+    transition: transform 0.3s ease;
+    padding-bottom: 1rem;
+  
+    &.active {
+      transform: scale(1.1);
+      background: #222;
+    }
+  
+    img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+  
+    .title {
+      margin: 1rem 0 0.5rem;
+      font-size: 1.2rem;
+    }
+  
+    .more-btn {
+      margin-top: 0.5rem;
+      background: none;
+      border: 1px solid white;
+      padding: 0.4rem 1.2rem;
+      border-radius: 6px;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+  
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1e1e1e;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.2rem 0.6rem;
+    z-index: 2;
+    border-radius: 50%;
+  
+    &.left {
+      left: 10px;
+    }
+  
+    &.right {
+      right: 10px;
+    }
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+  
+    img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+  
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+  
+    .modal-actions {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: space-around;
+  
+      button {
+        background: none;
+        border: 1px solid white;
+        color: white;
+        padding: 0.5rem 1.5rem;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+  
+        &:hover {
+          background-color: #333;
+        }
+      }
+    }
+  }
+  .back-btn {
+    margin: 1rem 0;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  
+    &:hover {
+      background-color: #333;
+    }
+  }
+  .category-page h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.quantity-selector button {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+}
+
+.quantity-selector input {
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+}
+
+  

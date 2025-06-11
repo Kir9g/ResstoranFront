@@ -1,0 +1,99 @@
+.edit-menu-item-page {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  .image-preview {
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    img {
+      max-width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    align-items: center;
+
+    label {
+      display: contents;
+      font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    select,
+    input[type="file"] {
+      width: 100%;
+      padding: 0.5rem;
+      background-color: #2a2a2a;
+      border: 1px solid #555;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 60px;
+    }
+
+    input[type="checkbox"] {
+      width: auto;
+      transform: scale(1.2);
+    }
+
+    .form-buttons {
+      grid-column: span 2;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+
+      button {
+        padding: 0.6rem 1.2rem;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .cancel-btn {
+        background-color: #e53935;
+        color: white;
+
+        &:hover {
+          background-color: #c62828;
+        }
+      }
+
+      button[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+
+        &:hover {
+          background-color: #43a047;
+        }
+      }
+    }
+  }
+}

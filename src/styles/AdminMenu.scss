@@ -1,0 +1,54 @@
+.admin-menu {
+  background: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+
+  .admin-menu-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    select,
+    button {
+      background: #2c2c2c;
+      border: 1px solid #aaa;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-family: 'Courier New', monospace;
+    }
+  }
+
+  .admin-menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Courier New', monospace;
+
+    th,
+    td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #555;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .visible-btn {
+      color: #4caf50;
+    }
+
+    .hidden-btn {
+      color: #e74c3c;
+    }
+
+    .delete-btn {
+      color: #e74c3c;
+    }
+  }
+}

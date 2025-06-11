@@ -1,0 +1,155 @@
+.booking-modal {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .dishes-list {
+    margin-bottom: 2rem;
+
+    .dish-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 1rem;
+      margin-bottom: 0.8rem;
+      border-radius: 8px;
+      background-color: #2a2a2a;
+
+      .dish-name {
+        font-size: 1rem;
+      }
+
+      .dish-price {
+        font-size: 1rem;
+        color: #ccc;
+      }
+
+      .add-btn {
+        padding: 0.4rem 0.8rem;
+        border: none;
+        background-color: #1976d2;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #115293;
+        }
+      }
+    }
+  }
+
+  .selected-items {
+    margin-top: 2rem;
+
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .selected-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.6rem 1rem;
+      background-color: #2a2a2a;
+      border-radius: 8px;
+      margin-bottom: 0.8rem;
+
+      .item-info {
+        display: flex;
+        flex-direction: column;
+
+        .item-name {
+          font-size: 1rem;
+          font-weight: 500;
+        }
+
+        .item-price {
+          font-size: 0.9rem;
+          color: #ccc;
+        }
+      }
+
+    }
+  }
+
+  .footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    .total {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .confirm-btn {
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #388e3c;
+      }
+    }
+  }
+
+  // Общий стиль для обычных кнопок, НЕ quantity
+  > button {
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #1976d2;
+    color: white;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #115293;
+    }
+  }
+}
+.quantity-controls {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          margin-top: 0.3em;
+
+          button {
+            font-size: 1.2rem;
+            padding: 0.3rem 0.6rem;
+            border: none;
+            border-radius: 6px;
+            background-color: #1976d2;
+            color: white;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #115293;
+            }
+          }
+
+          span {
+            font-size: 1rem;
+            min-width: 1.5rem;
+            text-align: center;
+          }
+        }

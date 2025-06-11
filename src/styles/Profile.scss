@@ -1,0 +1,71 @@
+.profile-page {
+  background-color: #1f1f23;
+  color: white;
+  padding: 40px;
+  min-height: 100vh;
+  font-family: 'Georgia', serif;
+
+  .title {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px #000;
+  }
+
+  .profile-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      min-width: 300px;
+
+      label {
+        font-size: 20px;
+        letter-spacing: 4px;
+        font-weight: bold;
+      }
+
+      input {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        padding: 8px;
+        font-size: 18px;
+        color: white;
+
+        &:disabled {
+          color: #aaa;
+        }
+
+        &:focus {
+          outline: none;
+          border-color: white;
+        }
+      }
+    }
+  }
+
+  .edit-btn {
+    margin: 40px auto 0;
+    display: block;
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px 25px;
+    font-size: 20px;
+    border-radius: 4px;
+    color: white;
+    letter-spacing: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background: white;
+      color: black;
+    }
+  }
+}

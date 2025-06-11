@@ -1,0 +1,23 @@
+
+@import './Header.scss';
+@import './ProfileMenu.scss';
+@import './Menu.scss';
+@import './MenuCard.scss';
+
+.app {
+  background-color: #222328;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Georgia', serif;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #222328; // или #1e1e1e — как в твоём макете
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  background-color: #222328;
+}

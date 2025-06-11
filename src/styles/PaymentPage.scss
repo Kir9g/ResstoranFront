@@ -1,0 +1,90 @@
+.payment-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1e1f24;
+  font-family: 'Arial', sans-serif;
+  padding: 1rem;
+}
+
+.payment-card {
+  background-color: #2a2c31;
+  color: #fff;
+  width: 360px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid #ffffff30;
+}
+
+
+.payment-card h2 {
+  font-size: 22px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.payment-card hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 1rem 0;
+}
+
+.payment-amount {
+  font-size: 16px;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.payment-label {
+  font-size: 14px;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 0.5rem;
+    cursor: pointer;
+
+    input[type='radio'] {
+      accent-color: #fff;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.btn-manual-seat {
+  width: auto; // или фиксированная ширина, если нужно
+  padding: 0.6rem 1.2rem;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 6px;
+   color: #fff !important;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #fff;
+    color: #2a2c31;
+  }
+
+  &:active {
+    background-color: #ccc;
+    color: #1c1d22;
+  }
+}

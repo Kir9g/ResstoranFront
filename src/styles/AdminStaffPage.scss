@@ -1,0 +1,68 @@
+.admin-staff-page {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 2rem;
+
+  .staff-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .staff-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      select {
+        padding: 0.5rem;
+        border-radius: 5px;
+      }
+
+      .add-btn {
+        background-color: #4caf50;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        svg {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .staff-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+
+    th,
+    td {
+      padding: 0.75rem;
+      border: 1px solid #444;
+      text-align: left;
+    }
+
+    th {
+      background-color: #333;
+    }
+
+    td button {
+      margin-right: 0.5rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    td button:hover {
+      color: #4caf50;
+    }
+  }
+}
